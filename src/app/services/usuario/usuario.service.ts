@@ -10,7 +10,7 @@ export class UsuarioService {
 
   API: string = 'http://localhost:8080/usuario';
   http = inject(HttpClient);
-
+ 
   
   getById(id: number): Observable<Usuario> {
     return this.http.get<Usuario>(`${this.API}/${id}`);
