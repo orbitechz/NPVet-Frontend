@@ -10,6 +10,7 @@ import { ErrorsComponent } from './core/errors/errors.component';
 import { UsuarioComponent } from './views/usuario/usuario.component';
 import { ListComponent } from './views/usuario/list/list.component';
 import { DetailsComponent } from './views/usuario/details/details.component';
+import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DetailsComponent } from './views/usuario/details/details.component';
     ErrorsComponent,
     UsuarioComponent,
     ListComponent,
-    DetailsComponent
+    DetailsComponent,
+    UsuarioInfoComponent
   ],
   imports: [
     BrowserModule,
