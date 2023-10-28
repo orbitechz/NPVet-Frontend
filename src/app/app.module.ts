@@ -20,6 +20,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { UsuarioEditComponent } from './views/usuario/usuario-edit/usuario-edit.component';
 
 import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.component';
+import { ListComponent } from './views/animal/list/list.component';
+import { DetailsComponent } from './views/animal/details/details.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +30,15 @@ import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.
     MenuComponent,
     LoginComponent,
     ErrorsComponent,
-    UsuarioComponent,
+    UsuarioListComponent,
     ListComponent,
-    DetailsComponent
-  ],
+    DetailsComponent,
+    UsuarioDetailsComponent,
+    UsuarioEditComponent,
+    UsuarioInfoComponent,
+    TutorListComponent,
+    TutorDetailsComponent,
+    SearchBarComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
