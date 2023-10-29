@@ -22,9 +22,6 @@ import { AnimalListComponent } from './views/animal/animal-list/animal-list.comp
 import { AnimalDetailsComponent } from './views/animal/animal-details/animal-details.component';
 
 import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.component';
-import { ListComponent } from './views/animal/list/list.component';
-import { DetailsComponent } from './views/animal/details/details.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,14 +30,13 @@ import { DetailsComponent } from './views/animal/details/details.component';
     LoginComponent,
     ErrorsComponent,
     UsuarioListComponent,
-    ListComponent,
-    DetailsComponent,
     UsuarioDetailsComponent,
     UsuarioEditComponent,
     UsuarioInfoComponent,
     TutorListComponent,
     TutorDetailsComponent,
-    SearchBarComponent    AnimalListComponent,
+    SearchBarComponent,
+    AnimalListComponent,
     AnimalDetailsComponent
   ],
   imports: [

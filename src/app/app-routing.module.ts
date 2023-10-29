@@ -14,6 +14,8 @@ const routes: Routes = [
   {path: "usuario/register", component: UsuarioDetailsComponent},
   {path: "usuario/edit/:id", component: UsuarioEditComponent},
   {path: "usuario/details/:id", component: UsuarioInfoComponent},
+  {path: "animal", component: AnimalListComponent},
+  {path: "animal/cadastro", component: AnimalDetailsComponent}
 ];
 
 @NgModule({

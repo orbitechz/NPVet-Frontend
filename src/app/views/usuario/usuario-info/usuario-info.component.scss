@@ -5,6 +5,15 @@
     padding: 20px;
     margin: 0;
   }
+
+  .usuarios{
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+  }
   
   .page-header {
     text-align: center;
@@ -90,3 +99,53 @@
     right: 38%;
     margin-bottom: 20px;
   }
+
+  .historico-consultas{
+    background-color: #F0F0F0;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    color: #00003D;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table th, .table td {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .header-content h1{
+    color: #00003D;
+    font-family: Arista Pro Trial;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .usuarios .info-usuario-form{
+    flex: 20%;
+  }
+
+  .usuarios .historico-consultas{
+    flex: 80%;
+    padding: 20px;
+  }
+
