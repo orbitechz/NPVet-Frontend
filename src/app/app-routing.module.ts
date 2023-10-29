@@ -5,6 +5,8 @@ import { UsuarioListComponent } from './views/usuario/usuario-list/usuario-list.
 import { UsuarioDetailsComponent } from './views/usuario/usuario-details/usuario-details.component';
 import { UsuarioEditComponent } from './views/usuario/usuario-edit/usuario-edit.component';
 import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.component';
+import { AnimalListComponent } from './views/animal/animal-list/animal-list.component';
+import { AnimalDetailsComponent } from './views/animal/animal-details/animal-details.component';
 
 const routes: Routes = [
   {path: "tutor", component: TutorListComponent},

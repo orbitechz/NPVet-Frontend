@@ -18,6 +18,8 @@ import { UsuarioService } from './services/usuario/usuario.service';
 import { NgxMaskDirective, NgxMaskPipe } from 'ngx-mask';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { UsuarioEditComponent } from './views/usuario/usuario-edit/usuario-edit.component';
+import { AnimalListComponent } from './views/animal/animal-list/animal-list.component';
+import { AnimalDetailsComponent } from './views/animal/animal-details/animal-details.component';
 
 import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.component';
 import { ListComponent } from './views/animal/list/list.component';
@@ -38,7 +40,9 @@ import { DetailsComponent } from './views/animal/details/details.component';
     UsuarioInfoComponent,
     TutorListComponent,
     TutorDetailsComponent,
-    SearchBarComponent  ],
+    SearchBarComponent    AnimalListComponent,
+    AnimalDetailsComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
