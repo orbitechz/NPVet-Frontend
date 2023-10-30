@@ -9,7 +9,7 @@ import { AnimalListComponent } from './views/animal/animal-list/animal-list.comp
 import { AnimalDetailsComponent } from './views/animal/animal-details/animal-details.component';
 
 const routes: Routes = [
-  {path: "tutor", component: TutorListComponent},
+  {path: "tutores", component: TutorListComponent},
   {path: "usuario", component: UsuarioListComponent},
   {path: "usuario/register", component: UsuarioDetailsComponent},
   {path: "usuario/edit/:id", component: UsuarioEditComponent},

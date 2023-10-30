@@ -14,6 +14,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { UsuarioDetailsComponent } from './views/usuario/usuario-details/usuario-details.component';
 import { UsuarioListComponent } from './views/usuario/usuario-list/usuario-list.component';
+import { MensagemComponent } from './components/mensagem/mensagem.component';
+import { IconsModule } from './modules/icons.module';
+import { TableComponent } from './components/table/table.component';
+import { ToggleModalComponent } from './components/modals/toggle-modal/toggle-modal.component';
 import { UsuarioService } from './services/usuario/usuario.service';
 import { NgxMaskDirective, NgxMaskPipe } from 'ngx-mask';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -38,6 +42,9 @@ import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.
     SearchBarComponent,
     AnimalListComponent,
     AnimalDetailsComponent
+    MensagemComponent,
+    TableComponent,
+    ToggleModalComponent
   ],
   imports: [
     BrowserModule,
@@ -45,8 +52,7 @@ import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.
     NgbModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule,
-    NgxMaskDirective, NgxMaskPipe
+    HttpClientModule
   ],
   providers: [UsuarioService],
   bootstrap: [AppComponent]
