@@ -41,7 +41,7 @@ import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.
     TutorDetailsComponent,
     SearchBarComponent,
     AnimalListComponent,
-    AnimalDetailsComponent
+    AnimalDetailsComponent,
     MensagemComponent,
     TableComponent,
     ToggleModalComponent
