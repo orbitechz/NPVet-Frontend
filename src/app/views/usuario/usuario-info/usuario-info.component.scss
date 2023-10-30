@@ -6,6 +6,16 @@
     margin: 0;
   }
 
+  .logo{
+    font-family: 'Arista' !important;
+    margin: 0;
+  }
+
+  .title{
+    font-family: 'SimplyRounded' !important;
+    font-weight: 200 !important;
+  }
+
   .usuarios{
     display: flex;
     align-content: flex-start;
@@ -47,7 +57,6 @@
   
   .page-header h1 {
     color: #00003D;
-    font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 600;
     margin: 0;

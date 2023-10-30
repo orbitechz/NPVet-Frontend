@@ -1,9 +1,9 @@
 <div class="usuarios d-flex flex-column justify-content-start">
   <div class="info-usuario-form container">
     <div class="page-header">
-      <div class="header-content">
-        <p>npvet</p>
-        <h1>Dados do Usuário</h1>
+      <div class="header-content d-flex align-items-start">
+        <p class="logo mb-2">npvet</p>
+        <p class="title">Dados do Usuário</p>
         <div class="action-register">
           <a href="usuario">
             <i class="bi bi-arrow-left"></i>
@@ -103,7 +103,7 @@
   </div>
 
   <div class="historico-consultas" *ngIf="usuario.tipoUsuario === 'MEDICO'">
-    <div class="w-75 h-100">
+    <div class="w-90 h-100">
       <app-mensagem [isErro]="isErro" [mensagem]="mensagem"></app-mensagem>
       <div class="d-flex justify-content-between mb-3">
           <h3 class="table-title">Historico de Consultas</h3>
