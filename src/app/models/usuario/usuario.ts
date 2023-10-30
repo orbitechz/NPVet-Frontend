@@ -1,4 +1,5 @@
 import { AbstractEntity } from "../abstract-entity/abstract-entity";
+import { Consulta } from "../consulta/consulta";
 import { TipoUsuario } from "../enums/tipo-usuario";
 
 export class Usuario extends AbstractEntity{
@@ -7,4 +8,5 @@ export class Usuario extends AbstractEntity{
     tipoUsuario!: TipoUsuario;
     username!: string;
     senha!: string;
+    consultas!: Consulta[];
 }

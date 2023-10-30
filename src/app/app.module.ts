@@ -14,13 +14,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { UsuarioDetailsComponent } from './views/usuario/usuario-details/usuario-details.component';
 import { UsuarioListComponent } from './views/usuario/usuario-list/usuario-list.component';
-import { MensagemComponent } from './components/mensagem/mensagem.component';
-import { IconsModule } from './modules/icons.module';
-import { TableComponent } from './components/table/table.component';
 import { UsuarioService } from './services/usuario/usuario.service';
 import { NgxMaskDirective, NgxMaskPipe } from 'ngx-mask';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { UsuarioEditComponent } from './views/usuario/usuario-edit/usuario-edit.component';
+import { MensagemComponent } from './components/mensagem/mensagem.component';
+import { IconsModule } from './modules/icons.module';
+import { TableComponent } from './components/table/table.component';
+import { UsuarioInfoComponent } from './views/usuario/usuario-info/usuario-info.component';
 
 
 @NgModule({
@@ -30,14 +31,18 @@ import { UsuarioEditComponent } from './views/usuario/usuario-edit/usuario-edit.
     MenuComponent,
     LoginComponent,
     ErrorsComponent,
+    UsuarioListComponent,
+    UsuarioDetailsComponent,
+    UsuarioEditComponent,
+    UsuarioInfoComponent,
     TutorListComponent,
     TutorDetailsComponent,
     UsuarioDetailsComponent,
     UsuarioListComponent,
-    MensagemComponent,
-    TableComponent,
     SearchBarComponent,
     UsuarioEditComponent,
+    MensagemComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,8 +51,8 @@ import { UsuarioEditComponent } from './views/usuario/usuario-edit/usuario-edit.
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    IconsModule,
-    NgxMaskDirective, NgxMaskPipe
+    NgxMaskDirective, NgxMaskPipe,
+    IconsModule
   ],
   providers: [UsuarioService],
   bootstrap: [AppComponent]
