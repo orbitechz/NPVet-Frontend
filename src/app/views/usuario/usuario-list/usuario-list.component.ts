@@ -13,7 +13,7 @@ export class UsuarioListComponent implements OnInit {
   @Input() isModal = false
   isErro!: boolean
   mensagem!: string
-  title = 'Tutores';
+  title = 'Usuario';
   usuarios: Usuario[] = [];
   data: any[] = [];
 

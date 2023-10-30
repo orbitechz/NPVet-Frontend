@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { provideNgxMask } from 'ngx-mask';
+import { Header } from 'src/app/components/table/header';
 import { Consulta } from 'src/app/models/consulta/consulta';
 import { Usuario } from 'src/app/models/usuario/usuario';
 import { ConsultaService } from 'src/app/services/consulta/consulta.service';
@@ -14,8 +15,12 @@ import { UsuarioService } from 'src/app/services/usuario/usuario.service';
 })
 export class UsuarioInfoComponent implements OnInit {
   usuario = new Usuario();
-  consultas: Consulta[] = [];
+  data: any[] = [];
   hide = true;
+  isErro!: boolean
+  mensagem!: string
+  title = 'Consulta';
+
 
   constructor(private uService: UsuarioService,
      private router: Router,
@@ -32,7 +37,7 @@ export class UsuarioInfoComponent implements OnInit {
       const id = +params['id'];
       this.cService.getConsultasByVeterinarioId(id).subscribe({
         next: (c) => {
-          this.consultas = c;
+          this.data = c;
         },
         error: (err) => {
           console.log(err);
@@ -54,8 +59,18 @@ export class UsuarioInfoComponent implements OnInit {
       });
     });
   }
+
+  apiUrlPath() {
+    return 'http://localhost:8080/consulta';
+  }
+
+  callHeaders() {
+    let tableHeaders: Header[] = [];
+    tableHeaders.push(new Header('Data', 'data'));
+    tableHeaders.push(new Header('Status', 'status'));
+    tableHeaders.push(new Header('Animal', 'animal.nome'));
+    tableHeaders.push(new Header('Tutor', 'tutor.nome'));
+    return tableHeaders;
+  }
   
-
-
-
 }

@@ -12,8 +12,8 @@
         <div class="d-flex justify-content-between mb-3">
             <h3 class="table-title">Usuarios Cadastrados</h3>
         </div>
-        <app-table [headers]="callHeaders()" [apiUrl]="apiUrlPath()" [editPath]="'/update'"
-            [entidade]="'Usuario'" [showToggle]="true" [detailsPath]=""></app-table>
+        <app-table [headers]="callHeaders()" [apiUrl]="apiUrlPath()" [editPath]="'usuario/edit'"
+            [entidade]="'Usuario'" [showToggle]="true" [detailsPath]="'usuario/details'"></app-table>
     </div>
 
 </div>
